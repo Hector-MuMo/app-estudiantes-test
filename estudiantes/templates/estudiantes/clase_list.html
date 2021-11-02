@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Lista de Materias</h2>
+<ul>
+  {% for clase in clases %}
+    <li><a href="{{clase.id}}">{{clase.materia}}</a> </li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>

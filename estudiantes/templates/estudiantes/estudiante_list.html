@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Estudiantes</title>
+</head>
+<body>
+<h2>Lista de Estudiantes</h2>
+<ul>
+  {% for estudiante in estudiantes %}
+    <li><a href="{{estudiante.id}}">{{estudiante.nombre}}</a> </li>
+  {% endfor %}
+</ul>
+
+<br/>
+
+<button><a href="/estudiantes/nuevoEstudiante/">Nuevo Estudiante</a></button>
+</body>
+</html>

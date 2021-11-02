@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle Estudiante</title>
+</head>
+<body>
+<h2>Detalle del Estudiante</h2>
+
+<span style="display:block">Nombre: {{estudiante.nombre}}</span>
+<span style="display:block">Apellido: {{estudiante.apellido}}</span>
+<span style="display:block">Matricula: {{estudiante.matricula}}</span>
+<span style="display:block">Semestre: {{estudiante.semestre}}</span>
+<span style="display:block">Activo: {{estudiante.activo}}</span>
+
+<br/>
+<img style="display:block" src="{{ MEDIA_URL }}{{ estudiante.avatar }}" alt="avatar">
+<br/>
+
+<button><a href="/estudiantes/">Regreso</a></button>
+</body>
+</html>
