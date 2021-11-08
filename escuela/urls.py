@@ -29,6 +29,7 @@ urlpatterns = [
     path('estudiantes/nuevoEstudiante/', CreateStudent.as_view()),
     path('clases/', ShowClasses.as_view()),
     path('clases/<pk>', DetailClass.as_view()),
+    path('', include('estudiantes.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += staticfiles_urlpatterns()

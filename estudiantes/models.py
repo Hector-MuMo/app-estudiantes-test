@@ -3,7 +3,7 @@ from django.db import models
 
 # Create your models here.
 class Estudiante(models.Model):
-    nombre = models.CharField(max_length=100 ,default="")
+    nombre = models.CharField(max_length=100, default="")
     apellido = models.CharField(max_length=200, default="")
     direccion = models.CharField(max_length=250, default="")
     matricula = models.IntegerField(null=True, default=None)

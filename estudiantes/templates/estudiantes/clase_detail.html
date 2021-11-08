@@ -6,9 +6,6 @@
 </head>
 <body>
 <h2>Estudiantes en la clase de {{clase.materia}}</h2>
-
-<br/>
-
 <ul>
   {% for estudiante in clase.estudiantes.all %}
     <li>{{estudiante}} </li>
